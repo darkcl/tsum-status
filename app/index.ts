@@ -4,6 +4,11 @@ export class Application {
   }
 
   start(): boolean {
+    console.log("Application Start");
     return true;
   }
 }
+
+const app: Application = new Application();
+
+app.start();
