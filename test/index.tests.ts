@@ -9,4 +9,9 @@ describe("Application Test", () => {
     const app: Application = new Application();
     expect(app.version()).to.equal("1.0");
   });
+
+  it("should start", () => {
+    const app: Application = new Application();
+    expect(app.start()).to.be.true;
+  });
 });

@@ -10,6 +10,7 @@
       "nodemon --watch ./dist --inspect=0.0.0.0:5858 --nolazy ./dist/index.js",
     "docker-debug": "docker-compose up",
     "test": "nyc mocha",
+    "watch-test": "nodemon -e ts --watch ./app ./test --exec 'npm test'",
     "start": "node ./dist/index.js"
   },
   "author": "",
