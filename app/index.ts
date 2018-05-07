@@ -1,14 +1,4 @@
-export class Application {
-  version(): string {
-    return "1.0";
-  }
+import { Application } from "./application";
 
-  start(): boolean {
-    console.log("Application Start");
-    return true;
-  }
-}
-
-const app: Application = new Application();
-
+const app = new Application();
 app.start();

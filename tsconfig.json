@@ -1,8 +1,16 @@
 {
   "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
     "outDir": "./dist",
-    "sourceMap": true
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "app/types/*"]
+    },
+    "allowJs": true
   },
-  "include": ["app/**/*"],
-  "exclude": ["./dist"]
+  "include": ["app/**/*"]
 }
