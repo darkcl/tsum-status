@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api:
+    build: .
+    command: npm run debug
+    volumes:
+      - './dist:/server/dist'
+  itest:
+    image: apiaryio/dredd
+    volumes:
+      - './docs:/docs'
+      - './dredd.yml:/dredd.yml'
+    depends_on:
+      - api
